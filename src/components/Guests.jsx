@@ -10,25 +10,25 @@ const guests = [
     icon: Heart,
     title: 'Pilgrims',
     description: 'Gateway to Sabarimala and other sacred temples',
-    image: '/Website Photos/with celebrities/IMG_20200109_105513.jpg',
+    image: 'https://i.ibb.co/sJJ2tM0K/IMG-20200109-105513.jpg',
   },
   {
     icon: Users,
     title: 'Families',
     description: 'Perfect for family gatherings and celebrations',
-    image: '/Website Photos/with celebrities/IMG_20191010_194602.jpg',
+    image: 'https://i.ibb.co/jpqZY4w/IMG-20191010-194602.jpg',
   },
   {
     icon: Briefcase,
     title: 'Business',
     description: 'Ideal for corporate stays and meetings',
-    image: '/Website Photos/with celebrities/IMG_20240612_073152.jpg',
+    image: 'https://i.ibb.co/Rp3s0Dvh/IMG-20240612-073237.jpg',
   },
   {
     icon: Globe,
     title: 'NRIs',
     description: 'A home away from home in Kerala',
-    image: '/Website Photos/with celebrities/IMG_20240525_102609.jpg',
+    image: 'https://i.ibb.co/ksSxQkgj/IMG-20240525-102609.jpg',
   },
 ]
 
