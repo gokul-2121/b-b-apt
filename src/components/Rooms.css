@@ -1,0 +1,439 @@
+.rooms {
+  position: relative;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.rooms-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 0;
+}
+
+.rooms .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section header animations */
+.section-header .reveal {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section-header.visible .reveal:nth-child(1) { transition-delay: 0s; }
+.section-header.visible .reveal:nth-child(2) { transition-delay: 0.1s; }
+.section-header.visible .reveal:nth-child(3) { transition-delay: 0.2s; }
+
+.section-header.visible .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Grid */
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.rooms-grid .room-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.rooms-grid.visible .room-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Group booking animation */
+.group-booking {
+  margin-top: 3rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s;
+  border: 1px solid rgba(212, 168, 83, 0.15);
+}
+
+.group-booking.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Room Card */
+.room-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+  border-color: rgba(212, 168, 83, 0.3);
+}
+
+.room-card.featured {
+  border: 2px solid var(--accent);
+  box-shadow: 0 8px 30px rgba(212, 168, 83, 0.15);
+}
+
+.room-card.featured:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(212, 168, 83, 0.2);
+}
+
+.room-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.room-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.room-card:hover .room-image img {
+  transform: scale(1.08);
+}
+
+.room-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(212, 168, 83, 0.3);
+}
+
+.room-content {
+  padding: 1.5rem;
+}
+
+.room-type {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-dark);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.room-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+}
+
+.room-description {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+.room-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.room-amenities li {
+  font-size: 0.8125rem;
+  color: var(--text-body);
+  padding: 0.375rem 0.875rem;
+  background: var(--cream);
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.room-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.room-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.125rem;
+}
+
+.room-price .price-symbol {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.room-price .price {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.room-price .per {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-left: 0.125rem;
+}
+
+.room-btn {
+  padding: 0.625rem 1.5rem;
+  font-size: 0.875rem;
+  border-radius: 50px;
+}
+
+/* Group Booking */
+.group-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 3rem;
+}
+
+.group-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 168, 83, 0.15);
+  border-radius: var(--radius-xl);
+  flex-shrink: 0;
+  color: var(--accent);
+  border: 1px solid rgba(212, 168, 83, 0.2);
+}
+
+.group-text {
+  flex: 1;
+}
+
+.group-text h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.group-text p {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.group-price {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.group-price .from {
+  display: block;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+}
+
+.group-price .amount {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.group-price .per {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.group-price .group-note {
+  display: block;
+  font-size: 0.75rem;
+  color: rgba(212, 168, 83, 0.8);
+  margin-top: 0.375rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .rooms-bg {
+    display: none;
+  }
+
+  .rooms-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .rooms-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .rooms-grid .room-card {
+    min-width: 280px;
+    max-width: 300px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    border-radius: var(--radius-lg);
+  }
+
+  .room-card.featured {
+    transform: none;
+  }
+
+  .room-card:hover {
+    transform: none;
+  }
+
+  .room-image {
+    height: 160px;
+  }
+
+  .room-content {
+    padding: 1rem;
+  }
+
+  .room-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .room-description {
+    font-size: 0.8125rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .room-amenities {
+    margin-bottom: 0.75rem;
+  }
+
+  .room-amenities li {
+    font-size: 0.6875rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .room-price .price {
+    font-size: 1.25rem;
+  }
+
+  .room-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .group-booking {
+    margin-top: 1.5rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .group-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .group-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .group-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .group-text {
+    flex: 1;
+    min-width: 100%;
+  }
+
+  .group-text h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .group-text p {
+    font-size: 0.8125rem;
+  }
+
+  .group-price {
+    padding: 0;
+  }
+
+  .group-price .amount {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .rooms-grid .room-card {
+    min-width: 260px;
+  }
+
+  .room-content {
+    padding: 0.875rem;
+  }
+
+  .room-footer {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .room-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

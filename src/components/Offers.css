@@ -1,0 +1,131 @@
+.offers {
+  background: var(--white);
+}
+
+.offers-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--cream);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(212, 168, 83, 0.1);
+}
+
+.offers-content {
+  padding: 3.5rem;
+}
+
+.offers-intro {
+  color: var(--text-body);
+  margin-bottom: 1.75rem;
+  line-height: 1.7;
+}
+
+.offers-list {
+  margin-bottom: 1.75rem;
+}
+
+.offers-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.625rem 0;
+  color: var(--text-body);
+  transition: var(--transition);
+}
+
+.offers-list li:hover {
+  color: var(--text-dark);
+  transform: translateX(4px);
+}
+
+.offer-check {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(212, 168, 83, 0.15), rgba(212, 168, 83, 0.08));
+  border: 1px solid rgba(212, 168, 83, 0.2);
+  border-radius: 50%;
+  color: var(--accent-dark);
+  margin-top: 1px;
+}
+
+.offers-note {
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-bottom: 1.75rem;
+}
+
+.offers-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.offers-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-slow);
+}
+
+.offers-card:hover .offers-image img {
+  transform: scale(1.05);
+}
+
+.offers-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.2) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .offers-card {
+    grid-template-columns: 1fr;
+    border-radius: var(--radius-lg);
+  }
+
+  .offers-content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .offers-intro {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .offers-list {
+    margin-bottom: 1rem;
+  }
+
+  .offers-list li {
+    padding: 0.375rem 0;
+    font-size: 0.875rem;
+  }
+
+  .offer-check {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+  }
+
+  .offer-check svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .offers-note {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .offers-image {
+    height: 160px;
+    order: -1;
+  }
+}

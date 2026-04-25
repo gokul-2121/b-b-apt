@@ -1,0 +1,394 @@
+/* ═══════════════════════════════════════════
+   NEWS & EVENTS PAGE — Premium Design
+   ═══════════════════════════════════════════ */
+
+.news-page {
+  min-height: 100vh;
+  padding: 0 0 5rem;
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(212, 168, 83, 0.06), transparent 50%),
+    radial-gradient(ellipse at 100% 80%, rgba(14, 165, 233, 0.05), transparent 50%),
+    var(--bg, #faf9f7);
+}
+
+.news-page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ─── Hero Banner ─── */
+.news-hero {
+  text-align: center;
+  padding: 6rem 1rem 3rem;
+}
+
+.news-hero-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #d4a853;
+  background: rgba(212, 168, 83, 0.1);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.news-hero-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #0f172a;
+  margin: 0.5rem 0;
+}
+
+.news-gradient-text {
+  background: linear-gradient(135deg, #d4a853 0%, #b6872f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.news-hero-subtitle {
+  font-size: 1.08rem;
+  color: #64748b;
+  max-width: 540px;
+  margin: 0.75rem auto 0;
+  line-height: 1.6;
+}
+
+/* ─── News Grid ─── */
+.news-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Featured (first) card spans full width */
+.news-item-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.news-item-featured .news-item-image-wrap {
+  border-radius: 16px 0 0 16px;
+  min-height: 320px;
+}
+
+.news-item-featured .news-item-image-wrap img {
+  height: 100%;
+}
+
+.news-item-featured .news-item-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2.5rem;
+}
+
+.news-item-featured .news-item-title {
+  font-size: 1.5rem;
+}
+
+.news-item-featured .news-item-excerpt {
+  font-size: 1.02rem;
+  -webkit-line-clamp: 5;
+}
+
+/* ─── Card Base ─── */
+.news-item-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.news-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(212, 168, 83, 0.12);
+}
+
+/* ─── Card Image ─── */
+.news-item-image-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.news-item-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.news-item-card:hover .news-item-image-wrap img {
+  transform: scale(1.05);
+}
+
+.news-item-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(15, 23, 42, 0.15) 100%);
+  pointer-events: none;
+}
+
+.news-item-no-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+  font-size: 3rem;
+}
+
+/* ─── Card Body ─── */
+.news-item-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.news-item-date {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d4a853;
+  margin-bottom: 0.5rem;
+}
+
+.news-item-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.news-item-excerpt {
+  font-size: 0.94rem;
+  color: #475569;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 0 0.75rem;
+}
+
+.news-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #d4a853;
+  transition: gap 0.2s ease;
+}
+
+.news-item-card:hover .news-read-more {
+  gap: 0.6rem;
+}
+
+/* ─── Empty State ─── */
+.news-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 2px dashed #e2e8f0;
+}
+
+.news-empty-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.news-empty-state h3 {
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin: 0 0 0.5rem;
+}
+
+.news-empty-state p {
+  color: #64748b;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════════
+   MODAL
+   ═══════════════════════════════════════════ */
+.news-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: newsModalFadeIn 0.2s ease;
+}
+
+@keyframes newsModalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.news-modal {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  animation: newsModalSlideUp 0.25s ease;
+}
+
+@keyframes newsModalSlideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.news-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  color: #0f172a;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.news-modal-close:hover {
+  background: #f1f5f9;
+}
+
+.news-modal-image-wrap {
+  width: 100%;
+  max-height: 360px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.news-modal-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-modal-body {
+  padding: 1.75rem 2rem 2rem;
+}
+
+.news-modal-date {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d4a853;
+  margin-bottom: 0.5rem;
+}
+
+.news-modal-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.75rem;
+  line-height: 1.25;
+}
+
+.news-modal-excerpt {
+  font-size: 1.02rem;
+  color: #334155;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.news-modal-divider {
+  height: 1px;
+  background: linear-gradient(90deg, #d4a853, transparent);
+  margin: 1.25rem 0;
+}
+
+.news-modal-content {
+  color: #475569;
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+.news-modal-content p {
+  margin: 0 0 0.75rem;
+}
+
+.news-modal-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .news-hero {
+    padding: 5rem 0.5rem 2rem;
+  }
+
+  .news-items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-item-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .news-item-featured .news-item-image-wrap {
+    border-radius: 16px 16px 0 0;
+    min-height: 200px;
+  }
+
+  .news-item-featured .news-item-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+  }
+
+  .news-modal-body {
+    padding: 1.25rem 1.5rem 1.5rem;
+  }
+
+  .news-modal-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .news-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
