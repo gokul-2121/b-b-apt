@@ -26,9 +26,9 @@ function NewsModal({ item, onClose }) {
         <button className="news-modal-close" onClick={onClose} aria-label="Close">
           ✕
         </button>
-        {item.imageUrl && (
+        {item.imageUrls?.[0] && (
           <div className="news-modal-image-wrap">
-            <img src={item.imageUrl} alt={item.title} referrerPolicy="no-referrer" />
+            <img src={item.imageUrls[0]} alt={item.title} referrerPolicy="no-referrer" />
           </div>
         )}
         <div className="news-modal-body">
@@ -73,8 +73,8 @@ export default function NewsPage({ newsItems = [] }) {
               onClick={() => setSelectedItem(item)}
             >
               <div className="news-item-image-wrap">
-                {item.imageUrl ? (
-                  <img src={item.imageUrl} alt={item.title} loading="lazy" referrerPolicy="no-referrer" />
+                {item.imageUrls?.[0] ? (
+                  <img src={item.imageUrls[0]} alt={item.title} loading="lazy" referrerPolicy="no-referrer" />
                 ) : (
                   <div className="news-item-no-image">
                     <span>📰</span>

@@ -299,7 +299,7 @@ export default function AdminPage() {
       date: formatDateForInput(item.date),
       excerpt: item.excerpt || '',
       content: item.content || '',
-      imageUrl: item.imageUrl || '',
+      imageUrl: item.imageUrls?.[0] || item.imageUrl || '',
       published: Boolean(item.published),
     })
   }
@@ -535,7 +535,7 @@ export default function AdminPage() {
                 {newsItems.map((item) => (
                   <div key={item.id} className={styles.itemCard}>
                     <img 
-                      src={item.imageUrl || '/images/logo.png'} 
+                      src={item.imageUrls?.[0] || item.imageUrl || '/images/logo.png'} 
                       alt={item.title}
                       loading="lazy"
                       referrerPolicy="no-referrer"

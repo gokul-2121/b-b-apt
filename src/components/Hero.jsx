@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { MapPin, ArrowRight, Download, Building2, Users, Star, ChevronLeft, ChevronRight } from 'lucide-react'
 import './Hero.css'
 
@@ -49,15 +48,12 @@ export default function Hero() {
             key={index} 
             className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
           >
-            <Image 
-              src={encodeURI(slide.image)} 
+            <img 
+              src={slide.image} 
               alt={slide.title} 
               className="hero-image"
-              fill
-              priority={index === 0}
-              quality={100}
-              style={{ objectFit: 'cover' }}
-              sizes="100vw"
+              style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
+              loading={index === 0 ? 'eager' : 'lazy'}
             />
             <div className="hero-overlay"></div>
           </div>

@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { Users, Briefcase, Heart, Globe } from 'lucide-react'
 import { useScrollReveal } from '../hooks/useAnimations'
 import './Guests.css'
@@ -49,12 +48,11 @@ export default function Guests() {
           {guests.map((guest, index) => (
             <div className="guest-card" key={index}>
               <div className="guest-image">
-                <Image 
-                  src={encodeURI(guest.image)} 
+                <img 
+                  src={guest.image} 
                   alt={guest.title} 
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  sizes="(max-width: 768px) 100vw, 25vw"
+                  style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
+                  loading="lazy"
                 />
               </div>
               <div className="guest-overlay"></div>

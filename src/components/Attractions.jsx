@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import { MapPin, Church } from 'lucide-react'
 import { useScrollReveal } from '../hooks/useAnimations'
 import './Attractions.css'
@@ -58,13 +57,12 @@ export default function Attractions() {
         <div className="attractions-grid">
           {spots.map((spot, index) => (
             <div className="attraction-card" key={`${activeTab}-${index}`}>
-              <div className="attraction-image" style={{ position: 'relative', width: '100%', height: '200px' }}>
-                <Image 
-                  src={encodeURI(spot.image)} 
+              <div className="attraction-image" style={{ position: 'relative', width: '100%', height: '200px', overflow: 'hidden' }}>
+                <img 
+                  src={spot.image} 
                   alt={spot.name} 
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
+                  loading="lazy"
                 />
                 <div className="attraction-distance">
                   <MapPin size={12} />

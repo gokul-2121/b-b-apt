@@ -5,8 +5,6 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { useScrollReveal } from '../hooks/useAnimations'
 import './Gallery.css'
 
-import Image from 'next/image'
-
 export default function Gallery({ images = [] }) {
   const [activeCategory, setActiveCategory] = useState('All')
   const [lightbox, setLightbox] = useState(null)
@@ -69,12 +67,11 @@ export default function Gallery({ images = [] }) {
               key={index}
               onClick={() => openLightbox(image, index)}
             >
-              <Image
-                src={encodeURI(image.src)}
+              <img
+                src={image.src}
                 alt={image.alt}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
+                loading="lazy"
               />
               <div className="gallery-overlay">
                 {image.category && <span className="gallery-category">{image.category}</span>}
@@ -94,14 +91,10 @@ export default function Gallery({ images = [] }) {
             <ChevronLeft size={28} />
           </button>
           <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
-            <Image
-              src={encodeURI(lightbox.src)}
+            <img
+              src={lightbox.src}
               alt={lightbox.alt}
-              fill
-              sizes="100vw"
-              style={{ objectFit: 'contain' }}
-              quality={85}
-              priority
+              style={{ objectFit: 'contain', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
             />
           </div>
           <button className="lightbox-nav lightbox-next" onClick={(e) => { e.stopPropagation(); navigate(1); }}>
