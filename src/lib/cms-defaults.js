@@ -11,7 +11,7 @@ export const defaultNewsItems = [
     excerpt: 'We are excited to unveil our newly designed suites with modern finishes.',
     content:
       'Our newest suites are now open, featuring upgraded interiors, better work-friendly spaces, and refreshed amenities for long and short stays.',
-    imageUrl: driveImg('1BfQ3F3y-O0foqxPgaPWMdKI2ryDLqwTs'),
+    imageUrl: 'https://i.ibb.co/vxTQZmFc/bju.jpg',
     published: true,
     createdAt: now,
     updatedAt: now,
@@ -23,7 +23,7 @@ export const defaultNewsItems = [
     excerpt: 'Exclusive group rates are available this winter season.',
     content:
       'Planning travel with family or pilgrims? Contact us for special pricing on group bookings and extended stays during the season.',
-    imageUrl: driveImg('1ChE1YHuDqaExZPRDNKbaCNUX1Kt3YeEC'),
+    imageUrl: 'https://i.ibb.co/8nh2t5BQ/IMG-20190330-WA0011.jpg',
     published: true,
     createdAt: now,
     updatedAt: now,
@@ -35,7 +35,7 @@ export const defaultNewsItems = [
     excerpt: 'Join us for a guided tour and refreshments.',
     content:
       'Visit our property, explore room options, and speak directly with our team about long-term and short-term accommodation plans.',
-    imageUrl: driveImg('1N6U6oFsgpxVmjEinyyWJOW8BKvI64So7'),
+    imageUrl: 'https://i.ibb.co/WNdnt5ff/IMG-20190911-110424.jpg',
     published: true,
     createdAt: now,
     updatedAt: now,
