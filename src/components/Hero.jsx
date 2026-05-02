@@ -13,13 +13,13 @@ const slides = [
     description: 'Stay with us, feel at Home. A modern apartment complex with all modern finishes including basement parking, lift, conference hall, roof top garden & more.'
   },
   {
-    image: 'https://i.ibb.co/v4FgF21t/Building-front-main.jpg',
+    image: 'https://i.ibb.co/0yhy2g0b/IMG-20190620-102550.jpg',
     title: 'Modern Living',
     subtitle: 'Premium Comfort',
     description: 'Experience modern amenities and traditional Kerala hospitality in our fully equipped apartments.'
   },
   {
-    image: 'https://i.ibb.co/v4FgF21t/Building-front-main.jpg',
+    image: 'https://i.ibb.co/1YmJp8bY/new-back.jpg',
     title: 'Save The Wild Nature!',
     subtitle: 'Near By Attractions',
     description: 'Konni - an attractive tourist destination with Elephant cradle, Adavi Bowl boating & more.'
