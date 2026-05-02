@@ -7,19 +7,19 @@ import './Hero.css'
 
 const slides = [
   {
-    image: 'https://i.ibb.co/kV19YHX2/Exterior-super-view.jpg',
+    image: 'https://i.ibb.co/XfsdmBYW/201-MBR10.jpg',
     title: 'Welcome to B&B',
     subtitle: 'A Modern Haven in God\'s Own Country',
     description: 'Stay with us, feel at Home. A modern apartment complex with all modern finishes including basement parking, lift, conference hall, roof top garden & more.'
   },
   {
-    image: 'https://i.ibb.co/BHVCRQr1/IMG-20190219-203821.jpg',
+    image: 'https://i.ibb.co/b51h8THT/IMG-20241120-155340.jpg',
     title: 'Modern Living',
     subtitle: 'Premium Comfort',
     description: 'Experience modern amenities and traditional Kerala hospitality in our fully equipped apartments.'
   },
   {
-    image: 'https://i.ibb.co/VWTgqscr/IMG-20240629-115309.jpg',
+    image: 'https://i.ibb.co/V0hR2zZc/1-BHK-202-TV.jpg',
     title: 'Save The Wild Nature!',
     subtitle: 'Near By Attractions',
     description: 'Konni - an attractive tourist destination with Elephant cradle, Adavi Bowl boating & more.'
