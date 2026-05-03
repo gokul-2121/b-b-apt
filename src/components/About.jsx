@@ -26,6 +26,8 @@ export default function About() {
                 alt="B&B Apartments Exterior"
                 loading="eager"
                 fetchPriority="high"
+                width="800"
+                height="600"
               />
               <div className="about-experience">
                 <span className="exp-number">7+</span>
@@ -38,6 +40,8 @@ export default function About() {
                 alt="B&B Apartments Room"
                 loading="eager"
                 fetchPriority="high"
+                width="400"
+                height="300"
               />
             </div>
             <div className="about-decoration"></div>
@@ -69,7 +73,7 @@ export default function About() {
                     <feature.icon size={22} />
                   </div>
                   <div className="feature-text">
-                    <h4>{feature.title}</h4>
+                    <h3>{feature.title}</h3>
                     <p>{feature.desc}</p>
                   </div>
                 </div>

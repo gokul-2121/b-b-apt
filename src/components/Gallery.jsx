@@ -71,8 +71,9 @@ export default function Gallery({ images = [] }) {
                 src={image.src}
                 alt={image.alt}
                 style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
-                loading={index < 4 ? 'eager' : 'lazy'}
-                fetchPriority={index < 4 ? 'high' : 'auto'}
+                loading="lazy"
+                width="400"
+                height="300"
               />
               <div className="gallery-overlay">
                 {image.category && <span className="gallery-category">{image.category}</span>}

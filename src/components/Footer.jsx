@@ -27,6 +27,9 @@ export default function Footer() {
                 src="/images/logo.png" 
                 alt="B&B Apartments" 
                 className="footer-logo-img"
+                width="48"
+                height="48"
+                loading="lazy"
               />
               <div className="footer-logo-text">
                 <span className="footer-logo-main">B&B</span>
@@ -39,13 +42,13 @@ export default function Footer() {
             </p>
             <div className="footer-social">
               <a href="https://www.facebook.com/bandbkonni" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.bandbkonni.com/images/fb-lgo.jpg" alt="Facebook" />
+                <img src="https://www.bandbkonni.com/images/fb-lgo.jpg" alt="Facebook" width="32" height="32" loading="lazy" />
               </a>
             </div>
           </div>
 
           <div className="footer-links">
-            <h4>Quick Links</h4>
+            <h2>Quick Links</h2>
             <ul>
               {quickLinks.map((link) => (
                 <li key={link.to}>
@@ -56,7 +59,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-links">
-            <h4>Our Services</h4>
+            <h2>Our Services</h2>
             <ul>
               <li><Link href="/rooms">Studio Rooms</Link></li>
               <li><Link href="/rooms">1 BHK Apartments</Link></li>
@@ -68,7 +71,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-contact">
-            <h4>Contact Info</h4>
+            <h2>Contact Info</h2>
             <ul>
               <li>
                 <MapPin size={18} />

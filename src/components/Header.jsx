@@ -55,7 +55,7 @@ export default function Header() {
       <header className={`header ${scrolled || !isHomePage ? 'scrolled' : ''}`}>
         <nav className="nav container">
           <Link href="/" className="nav-logo">
-            <img src="/images/logo.png" alt="B&B" className="logo-image" />
+            <img src="/images/logo.png" alt="B&B" className="logo-image" width="48" height="48" />
             <div className="logo-text">
               <span className="logo-main">B&B</span>
               <span className="logo-sub">APARTMENTS</span>

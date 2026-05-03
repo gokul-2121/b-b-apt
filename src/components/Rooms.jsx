@@ -82,8 +82,9 @@ export default function Rooms() {
                   src={room.image} 
                   alt={room.name} 
                   style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
-                  loading="eager"
-                  fetchPriority="high"
+                  loading="lazy"
+                  width="400"
+                  height="300"
                 />
                 {room.featured && <span className="room-badge">Most Popular</span>}
               </div>
