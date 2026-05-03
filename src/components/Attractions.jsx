@@ -62,7 +62,8 @@ export default function Attractions() {
                   src={spot.image} 
                   alt={spot.name} 
                   style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
-                  loading="lazy"
+                  loading="eager"
+                  fetchPriority="high"
                 />
                 <div className="attraction-distance">
                   <MapPin size={12} />

@@ -53,7 +53,8 @@ export default function Hero() {
               alt={slide.title} 
               className="hero-image"
               style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
-              loading={index === 0 ? 'eager' : 'lazy'}
+              loading="eager"
+              fetchPriority="high"
             />
             <div className="hero-overlay"></div>
           </div>

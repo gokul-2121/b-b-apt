@@ -22,9 +22,10 @@ export default function About() {
           <div className="about-images reveal-left">
             <div className="about-img-main">
               <img 
-                src="https://i.ibb.co/VWTgqscr/IMG-20240629-115309.jpg" 
+                src="https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777788171/new_back_zgibqq.jpg" 
                 alt="B&B Apartments Exterior"
-                loading="lazy"
+                loading="eager"
+                fetchPriority="high"
               />
               <div className="about-experience">
                 <span className="exp-number">7+</span>
@@ -33,9 +34,10 @@ export default function About() {
             </div>
             <div className="about-img-secondary">
               <img 
-                src="https://i.ibb.co/V0hR2zZc/1-BHK-202-TV.jpg" 
+                src="https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777788170/IMG_20240323_094431_1_vl2l4k.jpg" 
                 alt="B&B Apartments Room"
-                loading="lazy"
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
             <div className="about-decoration"></div>

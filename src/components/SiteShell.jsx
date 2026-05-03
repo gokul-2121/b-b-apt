@@ -18,7 +18,7 @@ export default function SiteShell({ children }) {
   }, [pathname])
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1200)
+    const timer = setTimeout(() => setLoading(false), 6200)
     return () => clearTimeout(timer)
   }, [])
 

@@ -167,7 +167,8 @@ export default function Contact() {
             height="400" 
             style={{ border: 0 }} 
             allowFullScreen="" 
-            loading="lazy"
+            loading="eager"
+            fetchPriority="high"
             title="B&B Apartments Location"
           ></iframe>
         </div>

@@ -9,10 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@cloudinary/react": "^1.14.4",
-    "@cloudinary/url-gen": "^1.22.0",
     "@vercel/blob": "^2.3.3",
-    "cloudinary": "^2.9.0",
     "jose": "^5.9.6",
     "lucide-react": "^0.263.1",
     "next": "^15.3.2",

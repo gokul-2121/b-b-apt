@@ -52,7 +52,8 @@ export default function Guests() {
                   src={guest.image} 
                   alt={guest.title} 
                   style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
-                  loading="lazy"
+                  loading="eager"
+                  fetchPriority="high"
                 />
               </div>
               <div className="guest-overlay"></div>

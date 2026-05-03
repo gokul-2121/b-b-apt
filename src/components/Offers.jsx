@@ -48,7 +48,7 @@ export default function Offers() {
             </Link>
           </div>
           <div className="offers-image">
-            <img src="https://www.bandbkonni.com/images/unit-2.jpg" alt="B&B Apartments" />
+            <img src="https://www.bandbkonni.com/images/unit-2.jpg" alt="B&B Apartments" loading="eager" fetchPriority="high" />
             <div className="offers-image-overlay"></div>
           </div>
         </div>

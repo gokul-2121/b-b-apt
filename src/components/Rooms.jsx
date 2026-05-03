@@ -20,7 +20,7 @@ const rooms = [
     type: 'Apartment',
     name: '1 BHK Apartment',
     description: 'Perfect for couples or solo travellers. Fully furnished with modern amenities.',
-    image: 'https://i.ibb.co/XxmWKP6M/1-BHK-202.jpg',
+    image: 'https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777750076/202_Living_ywol2u.jpg',
     price: '2,500',
     amenities: ['1 Bedroom', '1 Bathroom', 'Kitchen', 'Balcony', 'WiFi'],
   },
@@ -29,7 +29,7 @@ const rooms = [
     type: 'Apartment',
     name: '2 BHK Apartment',
     description: 'Spacious apartments ideal for families or small groups.',
-    image: 'https://i.ibb.co/jk9wkKH0/103-BR.jpg',
+    image: 'https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777751263/IMG_20241120_155340_qtgk06.jpg',
     price: '3,500',
     amenities: ['2 Bedrooms', '2 Bathrooms', 'Kitchen', 'Living Room', 'Balcony'],
     featured: true,
@@ -49,7 +49,7 @@ const rooms = [
     type: 'Conference',
     name: 'Conference Hall',
     description: 'Mini conference hall perfect for meetings and small events.',
-    image: 'https://i.ibb.co/zHFgsbSB/IMG-20240323-094431-1.jpg',
+    image: 'https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777788170/IMG_20240323_094431_1_vl2l4k.jpg',
     price: '5,000',
     amenities: ['60 Capacity', 'Projector', 'AC', 'Audio System'],
   },
@@ -82,7 +82,8 @@ export default function Rooms() {
                   src={room.image} 
                   alt={room.name} 
                   style={{ objectFit: 'cover', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}
-                  loading="lazy"
+                  loading="eager"
+                  fetchPriority="high"
                 />
                 {room.featured && <span className="room-badge">Most Popular</span>}
               </div>
