@@ -15,7 +15,7 @@ const guests = [
     icon: Users,
     title: 'Families',
     description: 'Perfect for family gatherings and celebrations',
-    image: 'https://i.ibb.co/jpqZY4w/IMG-20191010-194602.jpg',
+    image: 'https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777794783/IMG_20190911_110118_dw3sk0.jpg',
   },
   {
     icon: Briefcase,
