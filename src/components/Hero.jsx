@@ -11,18 +11,6 @@ const slides = [
     title: 'Welcome to B&B',
     subtitle: 'A Modern Haven in God\'s Own Country',
     description: 'Stay with us, feel at Home. A modern apartment complex with all modern finishes including basement parking, lift, conference hall, roof top garden & more.'
-  },
-  {
-    image: 'https://i.ibb.co/0yhy2g0b/IMG-20190620-102550.jpg',
-    title: 'Modern Living',
-    subtitle: 'Premium Comfort',
-    description: 'Experience modern amenities and traditional Kerala hospitality in our fully equipped apartments.'
-  },
-  {
-    image: 'https://i.ibb.co/1YmJp8bY/new-back.jpg',
-    title: 'Save The Wild Nature!',
-    subtitle: 'Near By Attractions',
-    description: 'Konni - an attractive tourist destination with Elephant cradle, Adavi Bowl boating & more.'
   }
 ]
 
@@ -30,6 +18,7 @@ export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   useEffect(() => {
+    if (slides.length <= 1) return;
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
     }, 6000)
@@ -66,24 +55,30 @@ export default function Hero() {
       <div className="hero-decor-right"></div>
 
       {/* Slider Controls */}
-      <button className="slider-btn slider-prev" onClick={prevSlide} aria-label="Previous slide">
-        <ChevronLeft size={24} />
-      </button>
-      <button className="slider-btn slider-next" onClick={nextSlide} aria-label="Next slide">
-        <ChevronRight size={24} />
-      </button>
+      {slides.length > 1 && (
+        <>
+          <button className="slider-btn slider-prev" onClick={prevSlide} aria-label="Previous slide">
+            <ChevronLeft size={24} />
+          </button>
+          <button className="slider-btn slider-next" onClick={nextSlide} aria-label="Next slide">
+            <ChevronRight size={24} />
+          </button>
+        </>
+      )}
 
       {/* Slide Indicators */}
-      <div className="slider-dots">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            className={`slider-dot ${index === currentSlide ? 'active' : ''}`}
-            onClick={() => setCurrentSlide(index)}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
+      {slides.length > 1 && (
+        <div className="slider-dots">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              className={`slider-dot ${index === currentSlide ? 'active' : ''}`}
+              onClick={() => setCurrentSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Hero Content */}
       <div className="hero-content">

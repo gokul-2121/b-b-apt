@@ -12,3 +12,5 @@ public/uploads/*
 *.uf2
 *.pptx
 *.pdf
+.vercel
+.env*.local
