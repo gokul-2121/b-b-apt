@@ -23,6 +23,11 @@ export const metadata = {
   },
   description:
     'Modern serviced apartments in Konni, Kerala. Explore rooms, facilities, attractions, gallery, and latest news updates.',
+  icons: {
+    icon: '/icon.png?v=3',
+    shortcut: '/favicon.ico?v=3',
+    apple: '/icon.png?v=3',
+  },
 }
 
 export default function RootLayout({ children }) {
