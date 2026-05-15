@@ -70,18 +70,18 @@ export default function Contact() {
             </div>
 
             <div className="social-booking">
-              <a href="https://www.facebook.com/bandbkonni" target="_blank" rel="noopener noreferrer" className="social-btn facebook" style={{ background: '#1877F2', color: 'white', display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold' }}>
+              <a href="https://www.facebook.com/bandbkonni" target="_blank" rel="noopener noreferrer" className="social-btn facebook">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                 </svg>
                 <span>Facebook</span>
               </a>
-              <a href="https://www.booking.com/searchresults.html?ss=B%26B+Apartments+Konni" target="_blank" rel="noopener noreferrer" className="social-btn booking" style={{ background: '#003580', color: 'white', display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold' }}>
-                <span style={{ fontSize: '1.2rem', fontFamily: 'Arial, sans-serif' }}>B.</span>
+              <a href="https://www.booking.com/searchresults.html?ss=B%26B+Apartments+Konni" target="_blank" rel="noopener noreferrer" className="social-btn booking">
+                <span className="booking-logo">B.</span>
                 <span>Booking.com</span>
               </a>
-              <a href="https://www.goibibo.com/hotels/" target="_blank" rel="noopener noreferrer" className="social-btn goibibo" style={{ background: '#FF5A00', color: 'white', display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 16px', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold' }}>
-                <span style={{ fontSize: '1.2rem', fontFamily: 'Arial, sans-serif' }}>gi</span>
+              <a href="https://www.goibibo.com/hotels/" target="_blank" rel="noopener noreferrer" className="social-btn goibibo">
+                <span className="goibibo-logo">gi</span>
                 <span>Goibibo</span>
               </a>
             </div>

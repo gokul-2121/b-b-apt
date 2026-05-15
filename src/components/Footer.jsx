@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { MapPin, Phone, Mail } from 'lucide-react'
+import { MapPin, Phone, Mail, Facebook } from 'lucide-react'
 import './Footer.css'
 
 const quickLinks = [
@@ -41,8 +41,8 @@ export default function Footer() {
               Your home away from home in the heart of Konni.
             </p>
             <div className="footer-social">
-              <a href="https://www.facebook.com/bandbkonni" target="_blank" rel="noopener noreferrer">
-                <img src="https://www.bandbkonni.com/images/fb-lgo.jpg" alt="Facebook" width="32" height="32" loading="lazy" />
+              <a href="https://www.facebook.com/bandbkonni" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+                <Facebook size={24} />
               </a>
             </div>
           </div>

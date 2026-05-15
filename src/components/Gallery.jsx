@@ -17,14 +17,17 @@ export default function Gallery({ images = [] }) {
     ? categories.filter(c => c !== 'All').map(cat => images.find(img => img.category === cat)).filter(Boolean)
     : images.filter(img => img.category === activeCategory)
 
-  const galleryImages = filteredImages.map((item) => ({
-    src: item.imageUrl,
-    alt: item.alt || item.title,
-    label: item.title,
-    category: item.category,
-    large: item.layout === 'large',
-    tall: item.layout === 'tall',
-  }))
+  const galleryImages = filteredImages.map((item) => {
+    const formattedCategory = item.category ? item.category.replace(/bhk/gi, ' BHK').trim() : '';
+    return {
+      src: item.imageUrl,
+      alt: item.alt || item.title,
+      label: item.title,
+      category: formattedCategory,
+      large: item.layout === 'large',
+      tall: item.layout === 'tall',
+    };
+  })
 
   const openLightbox = (image, index) => {
     setLightbox(image)
@@ -49,15 +52,18 @@ export default function Gallery({ images = [] }) {
         </div>
 
         <div className="gallery-filters">
-          {categories.map(cat => (
-            <button 
-              key={cat} 
-              className={`filter-btn ${activeCategory === cat ? 'active' : ''}`}
-              onClick={() => setActiveCategory(cat)}
-            >
-              {cat}
-            </button>
-          ))}
+          {categories.map(cat => {
+            const displayName = cat === 'All' ? 'All' : cat.replace(/bhk/gi, ' BHK').trim().split(' ').map(word => word.toUpperCase() === 'BHK' ? 'BHK' : word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+            return (
+              <button 
+                key={cat} 
+                className={`filter-btn ${activeCategory === cat ? 'active' : ''}`}
+                onClick={() => setActiveCategory(cat)}
+              >
+                {displayName}
+              </button>
+            );
+          })}
         </div>
 
         <div className={`gallery-grid ${sectionVisible ? 'stagger-children visible' : 'stagger-children'}`}>

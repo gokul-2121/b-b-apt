@@ -133,6 +133,16 @@
   border-color: rgba(212, 168, 83, 0.3);
 }
 
+.social-btn.facebook { background: #1877F2 !important; color: white !important; border: none !important; }
+.social-btn.booking { background: #003580 !important; color: white !important; border: none !important; }
+.social-btn.goibibo { background: #FF5A00 !important; color: white !important; border: none !important; }
+
+.booking-logo, .goibibo-logo {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
 .social-booking img {
   height: 32px;
   width: auto;
@@ -234,79 +244,89 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
   }
 
   .info-card {
-    padding: 0.75rem;
+    padding: 1rem 0.75rem;
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+    border: 1px solid var(--border);
   }
 
   .info-icon {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     margin: 0 auto;
   }
 
-  .info-icon svg {
-    width: 18px;
-    height: 18px;
-  }
-
   .info-content h4 {
-    font-size: 0.8125rem;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
   }
 
   .info-content p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .social-booking {
-    justify-content: center;
+    justify-content: flex-start;
     gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.5rem 0.25rem;
+    margin: 0 -1rem 1.5rem -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .social-booking img {
-    height: 24px;
-  }
-
-  .contact-form-wrapper {
-    padding: 1.25rem;
-  }
-
-  .contact-form-wrapper h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .form-group {
-    margin-bottom: 0.75rem;
-  }
-
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    padding: 0.625rem 0.875rem;
-    font-size: 0.875rem;
-  }
-
-  .form-group textarea {
-    min-height: 60px;
-  }
-
-  .map-wrapper {
+  .social-booking::-webkit-scrollbar {
     display: none;
   }
 
-  .btn-full {
-    padding: 0.75rem;
-    font-size: 0.875rem;
+  .social-btn {
+    flex: 0 0 auto !important;
+    white-space: nowrap;
+    padding: 0.6rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.5rem 1.25rem;
+    margin: 0 -0.5rem;
+  }
+
+  .contact-form-wrapper h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    text-align: left;
+  }
+
+  .map-wrapper {
+    display: block;
+    margin-top: 2rem;
+    height: 300px;
+  }
+
+  .map-wrapper iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .info-card {
+    flex-direction: row;
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  .info-icon {
+    margin: 0;
   }
 }

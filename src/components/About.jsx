@@ -22,7 +22,7 @@ export default function About() {
           <div className="about-images reveal-left">
             <div className="about-img-main">
               <img 
-                src="https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777788171/new_back_zgibqq.jpg" 
+                src="/images/optimized/new-back.jpg" 
                 alt="B&B Apartments Exterior"
                 loading="eager"
                 fetchPriority="high"
@@ -36,7 +36,7 @@ export default function About() {
             </div>
             <div className="about-img-secondary">
               <img 
-                src="https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777788170/IMG_20240323_094431_1_vl2l4k.jpg" 
+                src="/images/optimized/IMG-20200109-105513.jpg" 
                 alt="B&B Apartments Room"
                 loading="eager"
                 fetchPriority="high"

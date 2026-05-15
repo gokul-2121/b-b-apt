@@ -100,6 +100,28 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .gallery-filters {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0.5rem 1rem;
+    margin: 0 -1rem 2rem -1rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Hide scrollbar Firefox */
+  }
+
+  .gallery-filters::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
+  }
+
+  .filter-btn {
+    flex: 0 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
 .filter-btn {
   padding: 0.6rem 1.2rem;
   border-radius: 50px;

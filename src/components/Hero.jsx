@@ -7,7 +7,7 @@ import './Hero.css'
 
 const slides = [
   {
-    image: 'https://i.ibb.co/v4FgF21t/Building-front-main.jpg',
+    image: '/images/optimized/Exterior-super-view.jpg',
     title: 'Welcome to B&B',
     subtitle: 'A Modern Haven in God\'s Own Country',
     description: 'Stay with us, feel at Home. A modern apartment complex with all modern finishes including basement parking, lift, conference hall, roof top garden & more.'

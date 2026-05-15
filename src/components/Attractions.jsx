@@ -6,18 +6,18 @@ import { useScrollReveal } from '../hooks/useAnimations'
 import './Attractions.css'
 
 const touristSpots = [
-  { name: 'Konni Elephant Training Centre', distance: '2 km', image: 'https://www.bandbkonni.com/images/nar-by1.jpg' },
-  { name: 'Adavi Eco Tourism', distance: '10 km', image: 'https://www.bandbkonni.com/images/nar-by3.jpg' },
-  { name: 'Gavi Forest', distance: '55 km', image: 'https://www.bandbkonni.com/images/nar-by5.jpg' },
-  { name: 'Perunthenaruvi Waterfall', distance: '25 km', image: 'https://www.bandbkonni.com/images/nar-by7.jpg' },
+  { name: 'Konni Elephant Training Centre', distance: '2 km', image: '/images/attractions/konni_elephant.png' },
+  { name: 'Adavi Eco Tourism', distance: '10 km', image: '/images/attractions/adavi_eco.png' },
+  { name: 'Gavi Forest', distance: '55 km', image: '/images/attractions/gavi_forest.png' },
+  { name: 'Perunthenaruvi Waterfall', distance: '25 km', image: '/images/attractions/waterfall.png' },
 ]
 
 const pilgrimSpots = [
-  { name: 'Sabarimala Temple', distance: '65 km', image: 'https://www.bandbkonni.com/images/nar-by9.jpg' },
-  { name: 'Mannadi Temple', distance: '5 km', image: 'https://www.bandbkonni.com/images/nar-by11.jpg' },
-  { name: 'Aranmula Parthasarathy', distance: '15 km', image: 'https://www.bandbkonni.com/images/nar-by13.jpg' },
-  { name: 'Pandalam Palace', distance: '12 km', image: 'https://www.bandbkonni.com/images/nar-by15.jpg' },
-  { name: 'Kalleli Oorali Appoppankavu', distance: '8 km', image: 'https://www.bandbkonni.com/images/nar-by11.jpg' },
+  { name: 'Sabarimala Temple', distance: '65 km', image: '/images/attractions/sabarimala.png' },
+  { name: 'Mannadi Temple', distance: '5 km', image: '/images/attractions/mannadi.png' },
+  { name: 'Aranmula Parthasarathy', distance: '15 km', image: '/images/attractions/aranmula.png' },
+  { name: 'Pandalam Palace', distance: '12 km', image: '/images/attractions/pandalam.png' },
+  { name: 'Kalleli Oorali Appoppankavu', distance: '8 km', image: '/images/attractions/kalleli.png' },
 ]
 
 export default function Attractions() {
