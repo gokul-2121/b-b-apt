@@ -122,19 +122,6 @@ export const defaultGalleryItems = [
     "updatedAt": "2026-04-23T12:35:47.173Z"
   },
   {
-    "id": "9c28640d-c023-4c24-a6b6-597b1ca4db81",
-    "title": "2BHK",
-    "alt": "",
-    "category": "2bhk",
-    "caption": "",
-    "imageUrl": "https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777751263/IMG_20241120_155340_qtgk06.jpg",
-    "layout": "normal",
-    "visible": true,
-    "featured": false,
-    "createdAt": "2026-04-23T12:35:47.173Z",
-    "updatedAt": "2026-04-23T12:35:47.173Z"
-  },
-  {
     "id": "3ee82f0f-73cf-47fd-b029-12230de8eda2",
     "title": "1BHK Room 2",
     "alt": "1 BHK",
@@ -149,7 +136,7 @@ export const defaultGalleryItems = [
   },
   {
     "id": "4ba150ba-b354-4520-89c7-229d4f2b6895",
-    "title": "1 BHK kitchen",
+    "title": "1 BHK",
     "alt": "1bhk",
     "category": "1bhk",
     "caption": "",
@@ -158,11 +145,11 @@ export const defaultGalleryItems = [
     "visible": true,
     "featured": true,
     "createdAt": "2026-04-23T14:47:33.671Z",
-    "updatedAt": "2026-04-23T17:46:09.118Z"
+    "updatedAt": "2026-06-05T09:53:21.470Z"
   },
   {
     "id": "11a1123d-b692-4591-b88c-e3773f41d335",
-    "title": "1 BHK Toilet",
+    "title": "1 BHK Kitchen",
     "alt": "1 bhk",
     "category": "1bhk",
     "caption": "",
@@ -171,8 +158,7 @@ export const defaultGalleryItems = [
     "visible": true,
     "featured": false,
     "createdAt": "2026-04-23T17:37:36.915Z",
-    "updatedAt": "2026-04-23T17:47:10.459Z"
-
+    "updatedAt": "2026-06-05T09:54:23.722Z"
   },
   {
     "id": "3995b101-2adc-4cd7-9ea5-3b7127d8ed39",
@@ -199,7 +185,6 @@ export const defaultGalleryItems = [
     "featured": false,
     "createdAt": "2026-04-23T17:53:08.692Z",
     "updatedAt": "2026-04-23T17:58:48.048Z"
-
   },
   {
     "id": "3d729d86-597e-4b83-ace3-20c30eed52e4",
@@ -306,19 +291,6 @@ export const defaultGalleryItems = [
     "updatedAt": "2026-04-24T06:32:13.291Z"
   },
   {
-    "id": "c9dc90be-568e-43c1-8448-40fed0fb13f1",
-    "title": "Studio Room",
-    "alt": "stud",
-    "category": "studio",
-    "caption": "",
-    "imageUrl": "https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777751258/IMG_20241120_155231_fynjib.jpg",
-    "layout": "normal",
-    "visible": true,
-    "featured": false,
-    "createdAt": "2026-04-23T18:17:10.778Z",
-    "updatedAt": "2026-04-23T18:17:10.778Z"
-  },
-  {
     "id": "31430680-634a-41e1-8a1a-b4059e497149",
     "title": "Studio Room",
     "alt": "stud",
@@ -330,19 +302,6 @@ export const defaultGalleryItems = [
     "featured": false,
     "createdAt": "2026-04-23T18:18:51.559Z",
     "updatedAt": "2026-04-23T18:35:38.538Z"
-  },
-  {
-    "id": "84ac5948-3bdb-4184-bd72-b1ff811e035d",
-    "title": "Studio Room 2",
-    "alt": "stud",
-    "category": "studio",
-    "caption": "",
-    "imageUrl": "https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1777750054/1_BHK_202_ouvbk7.jpg",
-    "layout": "normal",
-    "visible": true,
-    "featured": false,
-    "createdAt": "2026-04-23T18:19:46.441Z",
-    "updatedAt": "2026-04-23T18:19:46.441Z"
   },
   {
     "id": "eea13546-f586-452e-b57c-99742586b284",
@@ -359,7 +318,7 @@ export const defaultGalleryItems = [
   },
   {
     "id": "f2d2bb65-8771-4514-8528-537ff4ccf66f",
-    "title": "2 BHK living room",
+    "title": "2 BHK Room",
     "alt": "2bhk",
     "category": "2bhk",
     "caption": "",
@@ -368,11 +327,11 @@ export const defaultGalleryItems = [
     "visible": true,
     "featured": false,
     "createdAt": "2026-04-23T18:29:08.964Z",
-    "updatedAt": "2026-04-23T18:29:08.964Z"
+    "updatedAt": "2026-06-05T10:01:31.775Z"
   },
   {
     "id": "5ee0f72c-f6f3-49c9-9fc1-3ea9f4533b89",
-    "title": "2 BHK Room 2",
+    "title": "2 BHK",
     "alt": "2bhk",
     "category": "2bhk",
     "caption": "",
@@ -381,11 +340,11 @@ export const defaultGalleryItems = [
     "visible": true,
     "featured": false,
     "createdAt": "2026-04-23T18:29:52.422Z",
-    "updatedAt": "2026-04-23T18:29:52.422Z"
+    "updatedAt": "2026-06-05T09:58:33.824Z"
   },
   {
     "id": "9997df53-4c89-4de4-9a6b-0566850e7c10",
-    "title": "2 BHK Room 2",
+    "title": "2 BHK Dining",
     "alt": "2bhk",
     "category": "2bhk",
     "caption": "",
@@ -394,7 +353,7 @@ export const defaultGalleryItems = [
     "visible": true,
     "featured": false,
     "createdAt": "2026-04-23T18:30:57.393Z",
-    "updatedAt": "2026-04-23T18:30:57.393Z"
+    "updatedAt": "2026-06-05T09:57:21.946Z"
   },
   {
     "id": "adbd24a6-4ce5-4aed-b952-f812ad181aa8",
@@ -411,7 +370,7 @@ export const defaultGalleryItems = [
   },
   {
     "id": "6dd9ebd5-ea8d-4314-8b68-83da828d36c0",
-    "title": "2 BHK living room 2",
+    "title": "2 BHK Kitchen",
     "alt": "2bhk",
     "category": "2bhk",
     "caption": "",
@@ -420,11 +379,11 @@ export const defaultGalleryItems = [
     "visible": true,
     "featured": false,
     "createdAt": "2026-04-23T18:32:39.201Z",
-    "updatedAt": "2026-04-23T18:32:39.201Z"
+    "updatedAt": "2026-06-05T09:57:41.391Z"
   },
   {
     "id": "763d31ac-ce4e-4fc7-aaa4-41ceedaffa80",
-    "title": "2 BHK Toilet",
+    "title": "2 BHK",
     "alt": "2bhk",
     "category": "2bhk",
     "caption": "",
@@ -433,7 +392,7 @@ export const defaultGalleryItems = [
     "visible": true,
     "featured": false,
     "createdAt": "2026-04-23T18:33:47.761Z",
-    "updatedAt": "2026-04-23T18:33:47.761Z"
+    "updatedAt": "2026-06-05T09:42:21.740Z"
   },
   {
     "id": "57018e90-4cd2-4a17-a69f-0f41a3c0e412",
@@ -603,6 +562,32 @@ export const defaultGalleryItems = [
     "featured": false,
     "createdAt": "2026-04-24T06:38:25.443Z",
     "updatedAt": "2026-04-24T06:38:25.443Z"
+  },
+  {
+    "id": "d1f88b28-e2bb-48de-8a9f-f86836e53365",
+    "title": "2 BHK",
+    "alt": "2bhk",
+    "category": "2bhk",
+    "caption": "",
+    "imageUrl": "https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1780652227/204_MBR_mcxogw.jpg",
+    "layout": "normal",
+    "visible": true,
+    "featured": false,
+    "createdAt": "2026-06-05T09:47:30.238Z",
+    "updatedAt": "2026-06-05T09:47:30.238Z"
+  },
+  {
+    "id": "83f6bb0e-edc6-4c94-bbc4-5f2e13a585bb",
+    "title": "Studio Room",
+    "alt": "stud",
+    "category": "studio",
+    "caption": "",
+    "imageUrl": "https://res.cloudinary.com/dz0z9dbpf/image/upload/q_auto/f_auto/v1780652965/IMG20250728090145_z7jybo.jpg",
+    "layout": "normal",
+    "visible": true,
+    "featured": false,
+    "createdAt": "2026-06-05T09:50:45.195Z",
+    "updatedAt": "2026-06-05T09:50:45.195Z"
   }
 ]
 
